@@ -1,7 +1,7 @@
 export default function handler(req, res) {
-  const today = new Date("2026-05-02"); // REMOVE THIS LINE LATER
+  const today = new Date(); // dynamic (changes daily)
 
-  const start = new Date("2026-01-01");
+  const start = new Date("2026-01-01");// fixed reference
   const end = new Date("2027-01-01");
 
   const daysGone = Math.floor((today - start) / (1000 * 60 * 60 * 24)) + 1;
